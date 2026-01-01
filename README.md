@@ -90,6 +90,7 @@ Run eatify.sql
 CREATE DATABASE food_delivery_app;
 USE food_delivery_app;
 -- restaurant table
+
 CREATE TABLE restaurant (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
@@ -192,7 +193,9 @@ VALUES
  'Malleshwaram, Bangalore',
  'Premium ice creams and desserts',
  '15 mins');
+ 
 -- menu table
+
 CREATE TABLE menu (
     id INT PRIMARY KEY AUTO_INCREMENT,
     restaurant_id INT,
@@ -236,7 +239,9 @@ VALUES
 
 (1, 'Cold Coffee', 'coffee.jpg', 4.4,
  'Chilled coffee blended with milk and ice', 119);
+ 
  -- user table
+
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
@@ -267,7 +272,9 @@ CREATE TABLE orders (
 
     address VARCHAR(255)
 );
+
 -- order item table
+
 CREATE TABLE order_items (
     order_item_id INT AUTO_INCREMENT PRIMARY KEY,
 
